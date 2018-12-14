@@ -1,24 +1,110 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Lunch Box</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+a:hover, a:active {
+  background-color: lightblue;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: lightblue;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: green;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 5px;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: green;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Lunch Box</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="1" target="x">About Us</a></li>
+      <li><a href="2" target="x">Products</a></li>
+      <li><a href="3" target="x">Contact Us</a></li>
+      <li><a href="4" target="x">Cart</a></li>
+    </ul>
+  </nav>
+
+  <article>
     <h1>Lunch Box</h1>
-    <div id="about">
-      <h2>About Us</h2>
-        <p>----Stuff about company---</p>
-      <h3>Menu</h3>
-      <h3>Contact</h3>
-        <p>Address and stuff.</p>
-    </div>
-    <div id="Shopping">
-      <h2>Cart</h2>
-      <h3>Products</h3>
-      <h3>Prices</h3>
-        <p> put prices here</p>
-    <div id="axtra">
-      <h2>extraMedia</h2>
-    </div>
-  </body>
+    <p>Lunch Box is a company that provides healthy food for schools</p>
+    <p></p>
+  </article>
+</section>
+
+<footer>
+  <p>"Unbox your Palate</p>
+</footer>
+
+</body>
 </html>
